@@ -28,3 +28,13 @@ first do this config=>
 
 then use=>
 npm run watch
+
+
+to use CSS use =>
+npm i --save-dev css-loader style-loader
+after that use this in webpack=>
+module: {
+    rules: [
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+    ],
+  },
