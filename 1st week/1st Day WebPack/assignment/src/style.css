@@ -1,0 +1,27 @@
+.red{
+    color: red;
+}
+
+.navBar{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 60px;
+}
+
+.logoT{
+    
+    font-size: 2vw;
+    color: red;
+}
+
+.img{
+    width: 80%;
+    height: 90%;
+}
+
+.inpBox{
+    margin-top: 5%;
+}
+div{
+    /* border: 1px solid black; */
+}
