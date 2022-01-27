@@ -1,0 +1,11 @@
+.redText{
+    color: red;
+}
+
+.bigText{
+
+    font-size: 5vw;
+}
+
+
+/* style-loader  css-loader */
