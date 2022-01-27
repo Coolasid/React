@@ -1,0 +1,30 @@
+to install webpack=>
+npm i --save-dev webpack webpack-cli
+
+
+
+if we want to run webpack locally =>
+npx webpack
+
+
+
+if we want to run webpack from package.json =>
+first do this config=>
+
+"scripts": {
+    "build": "webpack"
+  },
+
+then use=>
+npm run build
+
+
+if we want to run webpack like nodemon then use =>
+first do this config=>
+
+"scripts": {
+    "watch":"webpack --watch"
+  },
+
+then use=>
+npm run watch
