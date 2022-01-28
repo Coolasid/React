@@ -54,3 +54,7 @@ after that do =>
 }
 
 in .babelrc file
+
+
+to create react app=>
+create-react-app projectName
