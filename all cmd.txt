@@ -38,3 +38,19 @@ module: {
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
     ],
   },
+
+
+
+  to install react and react-dom=>
+  npm i react react-dom
+
+
+  to install babel =>
+  npm i --save-dev @babel/core @babel/node 
+@babel/preset-env @babel/preset-react babel-loader 
+after that do =>
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+in .babelrc file

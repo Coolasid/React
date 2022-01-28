@@ -13,19 +13,16 @@ console.log(mult(10,20));
 
 ReactDOM.render(
     //what to show
-    React.createElement("h1", {className:"redText"}, "Hello sid react" ),
+    <h1 className="redText">
+        <p>Paragraph</p>
+        <div>Hello</div>
+        <p>
+        <a href="#" >This is a link</a>
+
+        </p>
+    </h1>,
     //where to show
     document.getElementById("root")
 
 ) 
-
-
-//old way=>
-const h1 = document.createElement("h1");
-
-h1.classList.add("redText");
-h1.innerText = "hello sid"
-
-document.getElementById("root").appendChild(h1);
-
 
