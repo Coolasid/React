@@ -38,6 +38,8 @@ let button = document.getElementById("btn");
 
 let appendTask = document.getElementById("showTask")
 
+
+
 button.addEventListener("click", ()=>{
 
     
@@ -51,13 +53,15 @@ let valu = document.getElementById("val").value
         let p = document.createElement("p");
         p.classList.add("para")
 
-        p.innerText = valu;
+        p.innerText =  valu;
 
         let delBtn = document.createElement("button");
 
         delBtn.innerText = "Delete"
         delBtn.addEventListener("click", ()=>{
+            
             div.innerHTML = null;
+
         })
 
 
