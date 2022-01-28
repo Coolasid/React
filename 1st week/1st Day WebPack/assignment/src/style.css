@@ -22,6 +22,21 @@
 .inpBox{
     margin-top: 5%;
 }
+
+.showTaskBox{
+
+    display: grid;
+    grid-template-columns: 70% 10%;
+
+}
+
+.para{
+
+    font-size: 1.5vw;
+    color: red;
+
+
+}
 div{
     /* border: 1px solid black; */
 }

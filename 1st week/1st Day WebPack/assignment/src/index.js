@@ -30,7 +30,42 @@ let inp = document.getElementById("inp");
 inp.classList.add("inpBox")
 
 
-function appendTask(){
-    alert();
-}
+// adding tasks =>
+
+let button = document.getElementById("btn");
+
+
+
+let appendTask = document.getElementById("showTask")
+
+button.addEventListener("click", ()=>{
+
+    
+let valu = document.getElementById("val").value
+
+    // console.log(valu);
+
+    let div = document.createElement("div");
+    div.classList.add("showTaskBox")
+
+        let p = document.createElement("p");
+        p.classList.add("para")
+
+        p.innerText = valu;
+
+        let delBtn = document.createElement("button");
+
+        delBtn.innerText = "Delete"
+        delBtn.addEventListener("click", ()=>{
+            div.innerHTML = null;
+        })
+
+
+    div.append(p, delBtn)
+
+    appendTask.append(div);
+
+
+})
+
 
