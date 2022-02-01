@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const ToDoInput = () => {
+export const ToDoInput = ({handleData}) => {
     const [text, setText] = useState(" ")
 
     return (
@@ -9,7 +9,11 @@ export const ToDoInput = () => {
             <input type="text" onChange={(e) => {
                 setText(e.target.value);
             }} />
-            <button>Add ToDo</button>
+            <button onClick={()=>{
+                handleData(text)
+            }}>Add ToDo</button>
+
+            
 
         </div>
 
