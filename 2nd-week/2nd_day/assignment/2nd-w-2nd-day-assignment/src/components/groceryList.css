@@ -1,0 +1,19 @@
+.red{
+    color: red;
+
+}
+
+.green{
+    color: green;
+    text-decoration: line-through;
+}
+
+#GL{
+    margin: 2%  auto auto auto;
+    width: 50%;
+}
+
+#GL button{
+    margin: 1%;
+    
+}
