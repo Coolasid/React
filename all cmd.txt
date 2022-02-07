@@ -71,3 +71,13 @@ in package.json
 
 and make file> _redirects < in build
 add > /*  /index.html  200 < in your file
+
+
+//////deploy on heroku/////
+
+1. heroku login
+2. create app in heroku dashboard
+3. git init
+4. heroku git:remote -a to-dos-react    <= this cmd will be changed
+5. git add .
+6. git commit -m "first Deployment on Heroku"
