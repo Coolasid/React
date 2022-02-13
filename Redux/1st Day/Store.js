@@ -23,9 +23,15 @@ const reducer = (store, action) =>{
     switch(action.type){
         case "INC_COUNT":
             return {...store, count: store.count + action.payload }
+        case "DEC_COUNT":
+            return {...store, count: store.count - action.payload}
+        case "ADD_TODO":
+            return {...store, todo: [...store.todo, action.payload]}
         default:
             return store;
     }
+
+    
 
 };
 
@@ -38,3 +44,11 @@ console.log(store.getState());
 
 store.dispatch({type: "INC_COUNT", payload:1})
 console.log(store.getState());
+
+store.dispatch({ type: "DEC_COUNT", payload: 1 });
+console.log(store.getState());
+
+store.dispatch({
+    type: "ADD_TODO",
+    payload: { id: 1, state: false, }
+})
