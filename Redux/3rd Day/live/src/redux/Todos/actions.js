@@ -6,17 +6,9 @@ import {
   GET_TODO_LOADING,
   GET_TODO_SUCCESS,
   INC_COUNT
-} from "./actionTypes";
+} from "./Todos/actionTypes";
 
-export const incCount = (payload) => ({
-  type: INC_COUNT,
-  payload
-});
 
-export const decCount = (payload) => ({
-  type: DEC_COUNT,
-  payload
-});
 
 export const addTodo = (payload) => ({
   type: ADD_TODO,

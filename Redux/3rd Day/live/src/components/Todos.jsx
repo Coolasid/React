@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { addTodo, addTodoLoading, addTodoSuccess, getTodoLoading, getTodoSuccess } from "../redux/actions";
 
 import axios from "axios";
 
 export const Todos = () => {
-  const { loading, data, error } = useSelector((store) => store.todos);
+  const { loading, data, error } = useSelector((store) => store.todos, shallowEqual);
   const [text, setText] = useState("");
 
   const dispatch = useDispatch();

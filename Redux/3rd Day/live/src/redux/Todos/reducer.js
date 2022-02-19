@@ -9,7 +9,6 @@ import {
 } from "./actionTypes";
 
 const init = {
-  count: 10,
   todos: {
     loading: false,
     error: false,
@@ -19,11 +18,7 @@ const init = {
 
 export const reducer = (store = init, { type, payload }) => {
   switch (type) {
-    case INC_COUNT:
-      return { ...store, count: store.count + payload };
-    case DEC_COUNT:
-      return { ...store, count: store.count - payload };
-    case ADD_TODO:
+   case ADD_TODO:
       return { ...store, todos: [...store.todos, payload] };
     case ADD_TODO_LOADING:
       return {
@@ -63,3 +58,4 @@ export const reducer = (store = init, { type, payload }) => {
       return { ...store };
   }
 };
+
